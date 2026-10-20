@@ -1,13 +1,13 @@
 # process / 过程管理
 
-> 本目录用于保存项目的过程管理记录，对应课程要求（见 `0 - Project (2026).pdf`）中的
+> 本目录用于保存项目的过程管理记录，对应课程要求（见 [课程项目说明](../Project-Specification.pdf)）中的
 > 「Project Management」与「Version Control」：**会议纪要、仓库工作记录、版本记录**，
 > 以及周计划与 action items 跟踪。
 
 ## 目录结构
 
 ```
-process/
+docs/process/
 ├── README.md                         # 本文件：过程管理总说明与索引
 ├── meeting-minutes/                  # 会议纪要
 │   ├── template.md                   # 会议纪要模板

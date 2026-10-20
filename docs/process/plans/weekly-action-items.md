@@ -30,8 +30,8 @@
 | # | 事项 | 负责人 | 截止 | 状态 | 备注 |
 |---|---|---|---|---|---|
 | 1 | 建立 GitHub 仓库与 process 文件夹 | 王嘉淦 | 10/8 | done | 仓库 https://github.com/w13126755377-ops/SRE-project |
-| 2 | M1 文档初稿（Team Workflow） | 王嘉淦 | 10/9 | done | 见 `PROJECT-MILESTONE1-第六组-SRE小组.md` |
-| 3 | M2 大纲（Vision & Scope / Feature Roadmap） | 全员 | 10/9 | done | 见 `PROJECT-MILESTONE2-第六组-SRE小组.md` |
+| 2 | M1 文档初稿（Team Workflow） | 王嘉淦 | 10/9 | done | 见 [M1 工作流](../../PROJECT-MILESTONE1-第六组-SRE小组.md) |
+| 3 | M2 大纲（Vision & Scope / Feature Roadmap） | 全员 | 10/9 | done | 见 [M2 愿景与范围](../../PROJECT-MILESTONE2-Vision&Scope-第六组-SRE小组.md) |
 | 4 | 内部评审（第 2 轮） | 全员 | 10/9 | in progress | 微信群内评审 |
 | 5 | 修订定稿、导出 PDF、打 tag、按时提交 | 王嘉淦 | 10/10 | todo | 定稿后打 tag `v1.0-m1` / `v1.0-m2` |
 

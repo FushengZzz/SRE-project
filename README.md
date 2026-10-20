@@ -71,16 +71,17 @@
 
 ```
 SRE-project/
-├── README.md                          # 本文件
-├── PROJECT-MILESTONE1-第六组-SRE小组.md / .pdf   # M1 Team Workflow
-├── PROJECT-MILESTONE2-Vision&Scope-第六组-SRE小组.md / .pdf   # M2 Vision & Scope 文档
-├── PROJECT-MILESTONE2-第六组-SRE小组-v2.pptx / -v2.pdf   # M2 Project Proposal Presentation
-└── process/                           # 过程管理
-    ├── meeting-minutes/               # 会议纪要
-    ├── plans/                         # 周计划与 action items 跟踪
-    ├── worklog/                       # 仓库工作记录（Git 提交日志）
-    └── versions/                      # 版本记录（tag 与 changelog）
+├── README.md                          # 项目入口
+└── docs/                              # 项目文档与课程材料
+    ├── README.md                      # 文档索引
+    ├── Project-Specification.pdf       # 课程项目说明
+    ├── PROJECT-MILESTONE1-*.md / .pdf   # M1 工作流
+    ├── PROJECT-MILESTONE2-*            # M2 愿景、范围与展示
+    ├── PROJECT-MILESTONE3-第六组-SRE小组.md # M3 SRS
+    └── process/                       # 会议、计划、工作和版本记录
 ```
+
+文档入口见 [docs/README.md](docs/README.md)，需求规格见 [M3 SRS](docs/PROJECT-MILESTONE3-第六组-SRE小组.md)。
 
 ---
 
