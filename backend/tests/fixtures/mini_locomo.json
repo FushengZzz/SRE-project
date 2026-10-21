@@ -1,0 +1,40 @@
+[
+  {
+    "sample_id": "conv-t1",
+  "conversation": {
+    "speaker_a": "Gina",
+    "speaker_b": "Jon",
+    "session_1_date_time": "10:00 am on 10 March, 2023",
+    "session_1": [
+      {"speaker": "Jon", "dia_id": "D1:1", "text": "Hey Gina, how have you been?"},
+      {"speaker": "Gina", "dia_id": "D1:2", "text": "Not great. I lost my job at DoorDash last week."},
+      {"speaker": "Jon", "dia_id": "D1:3", "text": "I am sorry to hear that."}
+    ],
+    "session_2_date_time": "2:15 pm on 20 April, 2023",
+    "session_2": [
+      {"speaker": "Gina", "dia_id": "D2:1", "text": "I am researching adoption agencies these days."},
+      {"speaker": "Jon", "dia_id": "D2:2", "text": "That sounds like a big step."},
+      {"speaker": "Gina", "dia_id": "D2:3", "text": "Yes, I want to adopt a child."}
+    ],
+    "session_3_date_time": "9:30 am on 25 May, 2023",
+    "session_3": [
+      {"speaker": "Gina", "dia_id": "D3:1", "text": "I applied for the adoption agency program."},
+      {"speaker": "Jon", "dia_id": "D3:2", "text": "Fingers crossed for you."}
+    ],
+    "session_4_date_time": "4:45 pm on 30 June, 2023",
+    "session_4": [
+      {"speaker": "Gina", "dia_id": "D4:1", "text": "Good news! I passed the adoption agency interviews."},
+      {"speaker": "Jon", "dia_id": "D4:2", "text": "Congratulations Gina!"},
+      {"speaker": "Gina", "dia_id": "D4:3", "text": "I opened my own online store last month."}
+    ]
+  },
+  "qa": [
+    {
+      "question": "What is Gina's occupation now?",
+      "answer": "owns an online store",
+      "evidence": ["D4:3"],
+      "category": 1
+    }
+  ]
+  }
+]
