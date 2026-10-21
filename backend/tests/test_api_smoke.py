@@ -102,6 +102,26 @@ def test_query_supersede_chain(client):
     assert q["question"] == "What is Gina's occupation now?"
 
 
+def test_gina_work_change_preset_supersede(client):
+    """Gina「工作变化」preset：显式问失业与开店，应召回 occupation 并判定 SUPERSEDE。"""
+    r = client.post("/api/query", json={
+        "conversation_id": "conv-t1",
+        "question": "Did Gina lose her job and open an online clothing store?",
+        "top_k": 20,
+    })
+    assert r.status_code == 200, r.text
+    data = r.json()
+
+    assert any(
+        candidate["memory"]["attribute"] == "occupation"
+        for candidate in data["candidates"]
+    )
+    supersede = [rel for rel in data["relations"] if rel["type"] == "SUPERSEDE"]
+    assert len(supersede) >= 1
+    assert data["answer"]["status"] == "answered"
+    assert set(data["answer"]["cited_memory_ids"]) <= set(data["effective_memory_ids"])
+
+
 def test_query_update_chain(client):
     """AT-09：同一过程阶段推进 → UPDATE 链（researching → applied → passed）。"""
     r = client.post("/api/query", json={

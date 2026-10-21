@@ -8,12 +8,14 @@
 from __future__ import annotations
 
 import logging
+from pathlib import Path
 from uuid import uuid4
 
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from fastapi.staticfiles import StaticFiles
 
 from .api.routes import router
 from .config import get_settings
@@ -82,6 +84,16 @@ def create_app() -> FastAPI:
         )
 
     app.include_router(router)
+
+    # 可选：前端已构建（frontend/dist）时由同一进程托管，便于单命令启动（NFR-01）。
+    # API 路由先注册，因此 /api/* 不会被静态挂载覆盖。
+    frontend_dist = Path(__file__).resolve().parents[2] / "frontend" / "dist"
+    if frontend_dist.is_dir():
+        app.mount(
+            "/",
+            StaticFiles(directory=str(frontend_dist), html=True),
+            name="frontend",
+        )
     return app
 
 

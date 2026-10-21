@@ -14,6 +14,10 @@ docs/process/
 │   └── 2026-10-08-第1次例会.md        # 第 1 次例会纪要
 ├── plans/                            # 周计划与 action items 跟踪
 │   └── weekly-action-items.md        # 每周计划与行动项跟踪表
+├── reviews/                          # SRS / 设计评审记录
+├── testing/                          # 功能测试报告与页面截图
+│   ├── M4-功能测试报告.md
+│   └── screenshots/
 ├── worklog/                          # 仓库工作记录
 │   └── repository-worklog.md         # Git 提交记录与工作日志
 └── versions/                         # 版本记录
@@ -26,6 +30,8 @@ docs/process/
 |---|---|---|---|
 | `meeting-minutes/` | 每次例会纪要（含模板） | 轮值记录人 | 会后 24 小时内 |
 | `plans/` | 每周计划与 action items 跟踪 | 组长 | 每次例会前后 |
+| `reviews/` | SRS / 设计评审记录与待确认项 | 评审人 | 评审会后 |
+| `testing/` | 功能测试报告、验收矩阵与页面截图 | 测试 / 前端 | 每轮测试后 |
 | `worklog/` | Git 提交记录工作日志 | 组长 / 全员 | 每次提交后 |
 | `versions/` | 交付物版本与 tag 记录 | 组长 | 每个里程碑定稿后 |
 

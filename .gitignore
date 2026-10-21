@@ -1,1 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+backend/.env
 
+# SQLite / generated artifacts
+backend/data/app.db
+backend/data/app.db-*
+backend/data/demo_locomo.json
+backend/exports/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

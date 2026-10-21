@@ -1,0 +1,36 @@
+[
+  {
+    "sample_id": "synthetic-conflict-01",
+    "conversation": {
+      "speaker_a": "Alex",
+      "speaker_b": "Jordan",
+      "session_1_date_time": "1:00 pm on 1 March, 2024",
+      "session_1": [
+        {
+          "speaker": "Jordan",
+          "dia_id": "D1:1",
+          "text": "Hey Alex! How is work going?"
+        },
+        {
+          "speaker": "Alex",
+          "dia_id": "D1:2",
+          "text": "I work at DoorDash."
+        },
+        {
+          "speaker": "Jordan",
+          "dia_id": "D1:3",
+          "text": "Nice. Any news?"
+        },
+        {
+          "speaker": "Alex",
+          "dia_id": "D1:4",
+          "text": "Actually, I lost my job at DoorDash yesterday."
+        }
+      ]
+    },
+    "qa": [],
+    "event_summary": {},
+    "observation": {},
+    "session_summary": {}
+  }
+]
